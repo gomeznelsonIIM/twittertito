@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar {
+    background-color: #f1f1f1;
+    width: 200px;
+    padding: 20px;
+}
+
+.sidebar a {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: #f1f1f1;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.sidebar a {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+  /* Bouton 'connect' en bas à droite */
+input[type="submit"], #connect_btn{
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+
+.search-form {
+    margin-top: 20px;
+    margin-right: 40%;
+
+}
+
+
+.container {
+padding-top: 1%;
+display: flex;
+flex-direction: column;
+margin-left: 200px !important;
+justify-content: center;
+
+}
+
+.post {
+    background-color: grey;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    border: 2px solid #808080;
+    margin-left: 40%; 
+}
+
+.sidebar a:hover {
+    font-weight: bold;
+    font-size: 2em; /* Exemple de taille de police plus grande */
+    transition: font-weight 0.3s ease-in-out, font-size 0.3s ease-in-out; /* Ajout de la transition pour la taille de police */
+  }
+
+
+.tags {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-left: 90%;
+
+
+}
+
+.tag {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Transition pour les tags de la liste */
+.tags .tag {
+    transition: transform 0.3s ease-in-out;
+    font-size: 16px;
+}
+
+.tags .tag:hover {
+    transform: scale(1.1);
+}
+
+.tag[data-tag="all"] {
+    background-color: #808080;
+    color: #fff;
+}
+
+.tag[data-tag="Nature"] {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.tag[data-tag="Mode"] {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.tag[data-tag="Voyage"] {
+    background-color: #9b59b6;
+    color: #fff;
+}
+
+.tag[data-tag="Beauté"] {
+    background-color: #e74c3c;
+    color: #b56767;
+}
+
+.tag[data-tag="Sport"] {
+    background-color: #1abc9c;
+    color: #a76d6d;
+}
+
+.tag[data-tag="Technologie"] {
+    background-color: #27ae60;
+    color: #575454;
+}
+
+.tag[data-tag="Musique"] {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.tag[data-tag="Jeux"] {
+    background-color: #16a085;
+    color: #ff0000;
+}
+
+.tag[data-tag="Politique"] {
+    background-color: #d35400;
+    color: #4435e9;
+}
+.tag[data-tag="Olympiques"] {
+    background-color: #d35400;
+    color: #cfff0f;
+}
+
+.tag.active {
+    opacity: 0.7;
+}
